@@ -14,6 +14,8 @@ from piglow import PiGlow
 from urllib import urlopen
 from time import sleep
 
+piglow = PiGlow()
+
 #warm up the leds
 piglow.all([0])
 sleep(2)
@@ -40,7 +42,7 @@ def site_test():
         piglow.all([0])
         piglow.green([50])
         print "Green"
-        
+
 	else:
 		piglow.all([0])
 		piglow.red([50])
