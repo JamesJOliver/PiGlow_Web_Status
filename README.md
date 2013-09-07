@@ -78,7 +78,14 @@ Now the web_status.py file
 ````
 sudo wget https://raw.github.com/James12802/PiGlow_Web_Status/master/web_status.py
 ````
+Testing
+-----
+Now to test the file run
+````
+sudo python web_status.py
+````
 
+This will start outputing either green, red or orange and light up the corisponding leds
 
 
 
