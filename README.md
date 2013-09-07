@@ -7,8 +7,8 @@ BTW part of this tutorial is "borrowed" from [Boeeerb](https://github.com/Boeeer
 
 Files
 ------
-web_status.py - this one test a web page and then lights the corresponding led
-piglow.py - this is imported into the web_status.py
+web-status.py - this one test a web page and then lights the corresponding led
+piglow.py - this is imported into the web-status.py
 
 Requirements
 ------
@@ -58,7 +58,7 @@ sudo reboot
 
 Installation
 -----
-Create a directory for PiGlow and web_status to live in called src
+Create a directory for PiGlow and web-status to live in called src
 ````
 sudo mkdir /src
 ```` 
@@ -74,15 +74,15 @@ First install the PiGlow module
 sudo wget https://raw.github.com/Boeeerb/PiGlow/master/piglow.py
 ````
 
-Now the web_status.py file
+Now the web-status.py file
 ````
-sudo wget https://raw.github.com/James12802/PiGlow_Web_Status/master/web_status.py
+sudo wget https://raw.github.com/James12802/PiGlow_Web_Status/master/web-status.py
 ````
 Testing
 -----
 Now to test the file run
 ````
-sudo python web_status.py
+sudo python web-status.py
 ````
 
 This will start outputing either green, red or orange and light up the corresponding leds.
