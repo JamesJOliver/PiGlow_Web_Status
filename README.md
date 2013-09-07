@@ -7,7 +7,7 @@ BTW part of this is "borrowed" from [Boeeerb](https://github.com/Boeeerb/PiGlow)
 
 Files
 ------
-web_status.py - this one test a web page and then lights the corrisponding led
+web_status.py - this one test a web page and then lights the corresponding led
 piglow.py - this is imported into the web_status.py
 
 Requirements
@@ -25,7 +25,7 @@ Update the Raspberry Pi
 sudo apt-get update
 ````
 
-Now enable the ic2 driver by opening the following file in your faviourt text editor
+Now enable the ic2 driver by opening the following file in your Favourite text editor
 ````
 sudo nano /etc/modules
 ````
@@ -39,7 +39,7 @@ i2c-bcm2708
 The file should now look like this
 ![alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/add_modules.jpg "Added the two files to modules")
 
-Press Ctrl-X and when propmeted press Y
+Press Ctrl-X and when prompted press Y
 
 Now edit the next file raspi-blacklist.conf
 ````
@@ -49,7 +49,7 @@ And add # (hash sybols) to the beggining of each line
 
 ![alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/hashing.jpg "Hashing")
 
-Again press Ctrl-X and when propmeted press Y
+Again press Ctrl-X and when prompted press Y
 
 Now restart the Raspberry Pi
 ````
@@ -85,7 +85,11 @@ Now to test the file run
 sudo python web_status.py
 ````
 
-This will start outputing either green, red or orange and light up the corisponding leds
+This will start outputing either green, red or orange and light up the corresponding leds.
+
+![alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/working.jpg "Its Working!")
+
+Press Ctrl-Z to end the program.
 
 
 
