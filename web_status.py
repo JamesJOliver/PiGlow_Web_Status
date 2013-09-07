@@ -30,18 +30,18 @@ def site_test():
 	
 	if sitecode == 50:
 		piglow.all([0])
-        piglow.red([50])
-        print "Red"
+        	piglow.red([50])
+        	print "Red"
 
 	if sitecode == 0:
 		piglow.all([0])
-       	piglow.orange([50])
-        print "Orange"
+       		piglow.orange([50])
+        	print "Orange"
 
 	if sitecode == 200:
-        piglow.all([0])
-        piglow.green([50])
-        print "Green"
+        	piglow.all([0])
+        	piglow.green([50])
+        	print "Green"
 
 	else:
 		piglow.all([0])
