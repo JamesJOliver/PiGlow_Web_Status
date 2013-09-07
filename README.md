@@ -98,7 +98,9 @@ Press Ctrl-Z to end the program.
 
 Customisation
 -----
-Now this is all well and good but what's the point of it? Well I run a web server off of my headless Pi and want to know if my site is up or down without having to open my browser. To change the site address to simply
+Now this is all well and good but what's the point of it? Well I run a web server off of my headless Pi and want to know if my site is up or down without having to open my browser - I know, lazy right :p . 
+
+To change the site address to simply
 ````
 sudo nano web-status.py
 ````
