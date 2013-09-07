@@ -19,7 +19,7 @@ piglow = PiGlow()
 #warm up the leds
 piglow.all([0])
 sleep(2)
-piglow.all([50])
+piglow.all([10])
 sleep(2)
 piglow.all([0])
 
@@ -30,23 +30,23 @@ def site_test():
 	
 	if sitecode == 50:
 		piglow.all([0])
-        	piglow.red([50])
+        	piglow.red([10])
         	print "Red"
 
 	if sitecode == 0:
 		piglow.all([0])
-       		piglow.orange([50])
+       		piglow.orange([10])
         	print "Orange"
 
 	if sitecode == 200:
         	piglow.all([0])
-        	piglow.green([50])
+        	piglow.green([10])
         	print "Green"
 
 	else:
 		piglow.all([0])
 		piglow.red([50])
-		piglow.orange([50])
+		piglow.orange([10])
 		print "Red and Orange"
 
 #and so it beggins
