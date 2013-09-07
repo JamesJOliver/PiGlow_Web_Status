@@ -92,7 +92,7 @@ This will start printing either green, red or orange
 
 And light up the corresponding leds.
 
-[alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/lights.jpg "Pretty Lights!")
+![alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/lights.jpg "Pretty Lights!")
 
 Press Ctrl-Z to end the program.
 
