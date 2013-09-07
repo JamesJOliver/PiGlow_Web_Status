@@ -55,9 +55,29 @@ Now restart the Raspberry Pi
 ````
 sudo reboot
 ````
+
 Installation
 -----
+Create a directory for PiGlow and web_status to live in called src
+````
+sudo mkdir /src
+```` 
 
+Once this folder is created cd into it
+````
+cd /src
+````
+###Now for the actual installation
+
+First install the PiGlow module
+````
+sudo wget https://raw.github.com/Boeeerb/PiGlow/master/piglow.py
+````
+
+Now the web_status.py file
+````
+sudo wget https://raw.github.com/James12802/PiGlow_Web_Status/master/web_status.py
+````
 
 
 
