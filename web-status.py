@@ -21,7 +21,7 @@ piglow.all(0)
 sleep(2)
 piglow.all(10)
 sleep(2)
-piglow.all[0)
+piglow.all(0)
 
 def site_test():
 	
