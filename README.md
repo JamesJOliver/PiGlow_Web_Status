@@ -111,4 +111,69 @@ sitecode = urlopen("http://www.james12802.co.uk").getcode()
 
 Or what ever you want.
 
+Start on boot
+-----
+As I run my web server headless I don't want to keep having to start the script every time I boot up my Pi, so I have automated it.
 
+First cd into the init.d directory by
+````
+cd /etc/init.d
+````
+
+Now create the file "web-status" 
+````
+sudo nano web-status
+````
+
+And enter the following
+````
+#! /bin/sh
+# /etc/init.d/test
+
+### BEGIN INIT INFO
+# Provides:          clock
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Simple script to monitor the status of a website
+# Description:       Simple script to monitor the status of a website
+### END INIT INFO
+
+
+ case "$1" in
+  start)
+    sudo python /src/web-status/web-status.py
+    ;;
+  stop)
+   ;;
+  *)
+    killall python
+    exit 1
+    ;;
+
+esac
+exit 0
+````
+You should know it by now - press Ctrl-X and when prompted press Y
+
+Now make the file an executable
+````
+sudo chmod +x web-status
+````
+
+And add it to the start up scripts by
+````
+sudo update-rc.d web-status defaults
+````
+
+![alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/exe.jpg "Making the file executable")
+
+Now reboot your Pi
+````
+sudo reboot
+````
+
+And enjoy
+
+James12802 =D
