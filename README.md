@@ -41,14 +41,20 @@ The file should now look like this
 
 Press Ctrl-X and when propmeted press Y
 
-Now edit the next file 
+Now edit the next file raspi-blacklist.conf
 ````
 sudo nano /etc/modprobe.d/raspi-blacklist.conf
 ````
 And add # (hash sybols) to the beggining of each line
 
+![alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/hashing.jpg "Hashing")
 
+Again press Ctrl-X and when propmeted press Y
 
+Now restart the Raspberry Pi
+````
+sudo reboot
+````
 Installation
 -----
 
