@@ -91,5 +91,24 @@ This will start outputing either green, red or orange and light up the correspon
 
 Press Ctrl-Z to end the program.
 
+Customisation
+-----
+Now this is all weel and good but what's the point of it? Well I run a web server off of my headless Pi and want to know if my site is up or down without having to open my browser. To change the site address to simply
+````
+sudo nano web-status.py
+````
+
+And edit the following line from
+````
+sitecode = urlopen("http://www.raspberrypi.org").getcode()
+````
+
+To
+
+````
+sitecode = urlopen("http://www.james12802.co.uk").getcode()
+````
+
+Or what ever you want.
 
 
