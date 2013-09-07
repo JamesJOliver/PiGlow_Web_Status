@@ -37,7 +37,17 @@ i2c-bcm2708
 ````
 
 The file should now look like this
-![alt text](https://github.com/James12802/PiGlow_Web_Status/blob/master/images/add_modules.jpg "Added the two files to modules")
+![alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/add_modules.jpg "Added the two files to modules")
+
+Press Ctrl-X and when propmeted press Y
+
+Now edit the next file 
+````
+sudo nano /etc/modprobe.d/raspi-blacklist.conf
+````
+And add # (hash sybols) to the beggining of each line
+
+
 
 Installation
 -----
