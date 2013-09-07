@@ -86,9 +86,13 @@ Now to test the file run
 sudo python web-status.py
 ````
 
-This will start outputing either green, red or orange and light up the corresponding leds.
+This will start printing either green, red or orange 
 
 ![alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/working.jpg "Its Working!")
+
+And light up the corresponding leds.
+
+[alt text](https://raw.github.com/James12802/PiGlow_Web_Status/master/images/lights.jpg "Pretty Lights!")
 
 Press Ctrl-Z to end the program.
 
