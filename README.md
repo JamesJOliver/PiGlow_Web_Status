@@ -21,17 +21,23 @@ SMBus allows python to communicate with the PiGlow over the ic2 bus.
 Before Installation
 ------
 Update the Raspberry Pi
-    sudo apt-get update
+```
+sudo apt-get update
+````
 
 Now enable the ic2 driver by opening the following file in your faviourt text editor
-	sudo nano /etc/modules
+````
+sudo nano /etc/modules
+````
 
 And adding these two lines to the end of the file
-	i2c-dev
-	i2c-bcm2708
+````
+i2c-dev
+i2c-bcm2708
+````
 
 The file should now look like this
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Added the two files to modules")
+![alt text](https://github.com/James12802/PiGlow_Web_Status/blob/master/images/add_modules.jpg "Added the two files to modules")
 
 Installation
 -----
