@@ -16,7 +16,7 @@ Requirements
 The follwing module is required:
 * python-smbus
 
-SMBus allows python to communicate with the PiGlow over the ic2 bus.
+SMBus allows python to communicate with the PiGlow over the i2c bus.
 
 
 Before Installation
