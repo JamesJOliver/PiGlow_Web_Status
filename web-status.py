@@ -5,7 +5,7 @@
 
 #james12802
 
-#0 = not tested = orange
+#404 = page not found = orange
 #202 = OK = green
 #503 = server offline = red
 #else = ERROR = red and orange
@@ -28,26 +28,27 @@ def site_test():
 	sitecode = 123
 	sitecode = urlopen("http://www.raspberrypi.org").getcode()
 	
-	if sitecode == 50:
+	if sitecode == 503:
 		piglow.all(0)
         	piglow.red(10)
         	print "Red"
-
-	if sitecode == 0:
-		piglow.all(0)
-       		piglow.orange(10)
-        	print "Orange"
 
 	if sitecode == 200:
         	piglow.all(0)
         	piglow.green(10)
         	print "Green"
 
+	if sitecode == 404:
+		piglow.all(0)
+        	piglow.red(10)
+        	print "Orange"
+
 	else:
 		piglow.all(0)
-		piglow.red(50)
+		piglow.red(10)
 		piglow.orange(10)
-		print "Red and Orange"
+		piglow.yellow(10)
+		print "Red, Orange and Yellow "
 
 #and so it beggins
 site_test()
