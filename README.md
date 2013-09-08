@@ -26,7 +26,7 @@ Update the Raspberry Pi
 sudo apt-get update
 ````
 
-Now enable the ic2 driver by opening the following file in your Favourite text editor
+Now enable the i2c driver by opening the following file in your Favourite text editor
 ````
 sudo nano /etc/modules
 ````
